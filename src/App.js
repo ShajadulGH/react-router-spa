@@ -1,16 +1,19 @@
 import { Route } from "react-router-dom";
 import Welcome from "./Pages/Welcome";
 import Products from "./Pages/Prducts";
+import Nav from "./components/Nav";
 function App() {
   return (
     <div>
-      <h1>Lets Start!</h1>
-      <Route path="/welcome">
-        <Welcome />
-      </Route>
-      <Route path="/products">
-        <Products />
-      </Route>
+      <Nav />
+      <main>
+        <Route path="/welcome">
+          <Welcome />
+        </Route>
+        <Route path="/products">
+          <Products />
+        </Route>
+      </main>
     </div>
   );
 }
