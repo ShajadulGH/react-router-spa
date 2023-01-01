@@ -1,12 +1,11 @@
 import { Fragment } from "react";
-import { Route } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 const Welcome = () => {
   return (
     <Fragment>
       <h1>Hey, Welcome to my app!</h1>
-      <Route path="/welcome/new-user">
-        <p>Welcome, Shajadul Karim Bhuiyan</p>
-      </Route>
+      <Link to="new-user">New User</Link>
+      <Outlet />
     </Fragment>
   );
 };

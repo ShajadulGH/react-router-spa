@@ -6,12 +6,18 @@ const Nav = () => {
       <nav>
         <ul>
           <li>
-            <NavLink activeClassName={styles.active} to="/welcome">
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/welcome"
+            >
               Welcome
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName={styles.active} to="/products">
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/products"
+            >
               Producs
             </NavLink>
           </li>

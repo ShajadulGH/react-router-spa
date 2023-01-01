@@ -2,6 +2,9 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const Products = () => {
+  // const navigate = useNavigate();
+  // navigate(-1);
+  // navigate("/welcome", { replace: true });
   return (
     <Fragment>
       <h1>These are our Products!</h1>
